@@ -43,3 +43,43 @@ A função analisar_resultados conta as escolhas dos jogos antes e depois da alt
 A função main executa o teste A/B, coleta os dados, realiza a análise e gera o relatório.
 
 Este relatório documenta o processo de realização de um teste A/B para avaliar o impacto da alteração do tempo médio de jogo do "Jogo A" sobre a escolha dos usuários. Através da coleta de dados antes e depois da alteração e da análise dos resultados, foi possível observar a variação nas escolhas dos usuários, permitindo uma compreensão mais aprofundada do impacto dessa alteração.
+
+---------------
+
+# Mudanças Realizadas:
+
+### Análise de Dados
+
+Segmentação de Dados: A segmentação de dados não foi explicitamente incluída neste exemplo devido ao pequeno conjunto de dados. No entanto, em um cenário real, segmentaríamos os usuários por idade, gênero, ou outras características relevantes para observar como diferentes segmentos respondem à alteração.
+
+Cálculo do Tamanho da Amostra: O tamanho da amostra é calculado com base na variância, margem de erro e z-score, mas no exemplo acima, usamos todos os dados disponíveis.
+
+Execução do Teste A/B: A função aplicar_teste_ab modifica o atributo de interesse (tempo médio de jogo). A coleta de dados antes e depois da alteração permite a comparação.
+
+Análise dos Resultados: Utilizamos o teste t para comparar as médias das escolhas antes e depois da alteração, calculando os p-valores para avaliar a significância das mudanças observadas.
+
+## Relatório Final
+
+### Design Experimental
+
+O teste A/B foi desenhado para avaliar o impacto de aumentar o tempo médio de jogo do "Jogo A" nas escolhas dos usuários.
+
+### Execução do Teste
+
+**Coleta de Dados:** Coletamos as escolhas dos usuários antes e depois da alteração.
+**Alteração Implementada:** O tempo médio de jogo do "Jogo A" foi alterado para 60 minutos.
+
+**Análise dos Resultados**
+A contagem de escolhas para cada jogo foi comparada antes e depois da alteração. Os p-valores foram calculados para determinar se as mudanças observadas foram estatisticamente significativas.
+
+### Conclusões
+Os resultados indicaram que não houve variação significativa nas escolhas dos usuários após a alteração, com p-valores acima do nível usual de significância (0.05). Isso sugere que a alteração no tempo médio de jogo do "Jogo A" não afetou significativamente as preferências dos usuários.
+
+### Variáveis Confundidoras e Importância da Segmentação
+É importante considerar variáveis confundidoras, como outras características dos usuários (idade, gênero, preferências específicas), que podem influenciar as escolhas. A segmentação de dados pode fornecer insights mais detalhados sobre como diferentes grupos de usuários respondem a mudanças específicas.
+
+
+
+
+
+
