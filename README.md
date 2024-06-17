@@ -48,6 +48,16 @@ Este relatório documenta o processo de realização de um teste A/B para avalia
 
 # Mudanças Realizadas:
 
+### Explicação das Alterações
+
+**Geração de Dados Simulados:** A função gerar_dados_usuarios gera um conjunto maior de dados simulados de usuários para tornar a análise estatística mais relevante.
+
+**Função para Calcular o p-valor:** A função calcular_p_valor agora usa um teste z para calcular o p-valor com base nas proporções das escolhas antes e depois da alteração. Isso fornece uma análise estatística mais precisa.
+
+**Relatório de Resultados:** O relatório inclui os p-valores calculados para cada jogo, ajudando a avaliar a significância estatística das mudanças observadas.
+
+Com as mudanças realizadas a análise é um pouco mais robusta e capaz de detectar variações estatisticamente significativas nas escolhas dos usuários após a alteração do tempo médio de jogo.
+
 ### Análise de Dados
 
 Segmentação de Dados: A segmentação de dados não foi explicitamente incluída neste exemplo devido ao pequeno conjunto de dados. No entanto, em um cenário real, segmentaríamos os usuários por idade, gênero, ou outras características relevantes para observar como diferentes segmentos respondem à alteração.
@@ -67,6 +77,7 @@ O teste A/B foi desenhado para avaliar o impacto de aumentar o tempo médio de j
 ### Execução do Teste
 
 **Coleta de Dados:** Coletamos as escolhas dos usuários antes e depois da alteração.
+
 **Alteração Implementada:** O tempo médio de jogo do "Jogo A" foi alterado para 60 minutos.
 
 **Análise dos Resultados**
